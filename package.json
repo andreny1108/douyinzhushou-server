@@ -1,0 +1,33 @@
+{
+  "name": "phonenumber-xitong",
+  "version": "1.0.0",
+  "description": "团队手机号管理系统 - 自动查询余额和每月充值",
+  "main": "server.js",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "migrate": "node db/migrate.js up",
+    "test": "jest --runInBand"
+  },
+  "dependencies": {
+    "axios": "^1.7.0",
+    "dotenv": "^16.4.0",
+    "express": "^4.19.0",
+    "joi": "^17.12.0",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.9.0",
+    "node-cron": "^3.0.3",
+    "nodemailer": "^6.9.0",
+    "uuid": "^9.0.0",
+    "winston": "^3.13.0",
+    "winston-daily-rotate-file": "^5.0.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "sinon": "^17.0.0",
+    "supertest": "^7.0.0"
+  }
+}
